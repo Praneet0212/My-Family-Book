@@ -8,14 +8,14 @@
         <h4 style="border-top: 10px; font-weight: bold;" id="name">My Family Book</h4>
         <button type="button" onclick="change()">Next</button>
         <script>
-            var image = ["Father.jpeg","Mother.jpeg","ME.jpeg","Sister.jpeg","https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg"];
-            var family = ["Supratim Dey","Prajita Dey","Praneet Dey","Pratyasha Dey","My Family Book"];
+            var image = ["Grandpa.jpeg","Grandma.jpeg","Father.jpeg","Mother.jpeg","ME.jpeg","Sister.jpeg","https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg"];
+            var family = ["Banku Bihari Dey","Nivedita Dey","Supratim Dey","Prajita Dey","Praneet Dey","Pratyasha Dey","My Family Book"];
             var i = 0;
 function change() {
 document.getElementById("name").innerHTML= family[i]; 
 document.getElementById("image").src= image[i];
 i++;
-if (i>4) {
+if (i>6) {
     i= 0;
 }
             
