@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+    <body style="text-align: center;">
+        <h1><b>My Family Book</b></h1>
+        <img id="image" style="border-top: 25px; height: 400px; width: 400px;" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+        <h4 style="border-top: 10px; font-weight: bold;" id="name">My Family Book</h4>
+        <button type="button" onclick="change()">Next</button>
+        <script>
+            var image = ["Father.jpeg","Mother.jpeg","ME.jpeg","Sister.jpeg","https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg"];
+            var family = ["Supratim Dey","Prajita Dey","Praneet Dey","Pratyasha Dey","My Family Book"];
+            var i = 0;
+function change() {
+document.getElementById("name").innerHTML= family[i]; 
+document.getElementById("image").src= image[i];
+i++;
+if (i>4) {
+    i= 0;
+}
+            
+            }         
+                        
+            
+           
+        </script>
+    </body>
+    </html>
